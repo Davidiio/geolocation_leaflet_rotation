@@ -1,0 +1,18 @@
+leaflet.rotate:
+  header: true
+  remote: https://github.com/Raruto/leaflet-rotate
+  version: '0.1.1'
+  license:
+    name: GPL-3.0
+    gpl-compatible: true
+  js:
+    'https://unpkg.com/leaflet-rotate@0.1.2/dist/leaflet-rotate-src.js': { type: external }
+  dependencies:
+    - geolocation_leaflet/leaflet
+
+mapfeature.leaflet_rotate:
+  js:
+    js/geolocation-leaflet-rotate.js: {}
+  dependencies:
+    - geolocation_leaflet/geolocation.leaflet
+    - geolocation_leaflet_rotation/leaflet.rotate
